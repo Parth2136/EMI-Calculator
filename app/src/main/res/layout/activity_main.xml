@@ -1,68 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
+        android:id="@+id/amount_edt"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="#fff"
-        android:ems="10"
         android:hint="Enter Loan Ammount "
+        android:textStyle="bold"
         android:inputType="number"
-        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
         android:layout_gravity="center"/>
 
     <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
+        android:id="@+id/int_edt"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#fff"
-        android:ems="10"
-        android:hint="Enter Time"
-        android:inputType="number"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"/>
-
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Enter Rate Of Interest"
-        android:ems="10"
+        android:hint="Enter Interest "
+        android:textStyle="bold"
         android:inputType="numberDecimal"
-        android:background="#fff"
-        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/month_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Duration of Month "
+        android:textStyle="bold"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
         android:layout_gravity="center"/>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/emi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="Calculate EMI"
-        android:backgroundTint="#F44336"
-        android:layout_marginTop="80dp"
+        android:hint="Calculate EMI "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_margin="25dp"
         android:layout_gravity="center"/>
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="250dp"
-        android:layout_height="80dp"
-        android:textColor="#fff"
-        android:textAlignment="center"
-        android:layout_marginTop="120dp"
+        android:id="@+id/emi_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter EMI "
+        android:textStyle="bold"
+        android:inputType="numberDecimal"
+        android:textSize="20dp"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/total_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Total Amount "
+        android:textStyle="bold"
+        android:inputType="numberDecimal"
+        android:textSize="20dp"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/extra_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Extra Amount "
+        android:textStyle="bold"
+        android:inputType="numberDecimal"
+        android:textSize="20dp"
+        android:layout_margin="15dp"
         android:layout_gravity="center"/>
 
 </LinearLayout>
